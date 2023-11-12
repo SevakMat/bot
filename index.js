@@ -54,12 +54,12 @@ async function detect() {
 
 app.listen(8080, () => {
   console.log("server running on port 8080")
-  // cron.schedule('0 * * * *', () => {
-  //   console.log('running a task every minute');
-  //   main();
-  // });
+  cron.schedule('0 * * * *', () => {
+    console.log('running a task every minute');
+    main();
+  });
 
-  detect()
+  // detect()
 
 
 })
